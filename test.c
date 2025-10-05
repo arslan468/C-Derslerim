@@ -1,10 +1,8 @@
 #include<stdio.h>
 
 int main() {
-    printf("yahudileri\t  gotten\n kendimi ");
-    printf("kaybettim\n");
-    printf("yolumu\t  buldum\n");
-    
+    printf("BTK akademi derslerime başlıyorum\n");
+
     return 0;
 }
 
