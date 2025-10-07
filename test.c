@@ -20,9 +20,7 @@ int main() { //programın başlangıç noktası
     printf("Toplam: %d\n", toplam);
     printf("Çarpım: %d\n", carpim);
     printf("Fark: %d\n", fark);     
-    printf("Bölüm: %.2f\n", bolum); //%.2f ile virgülden sonra 2 basamak gösterme
+    printf("Bölüm: %.2f\n", bolum);
     printf("Mod: %d\n", mod);
-    
-
-    return 0;       //programın sonlanması
+    return 0;       //programın sonlanması.    clang test.c -o main.      ./main
 }               
