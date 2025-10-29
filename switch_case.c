@@ -13,16 +13,16 @@ int main ()
 
     switch (operator){
         case '+':
-            printf("Girmiş olduğunuz %.2lf ve %.2lf sayılarının toplamı %.2lf", firstnumber, secondnumber, firstnumber+secondnumber);
+            printf("\r Girmiş olduğunuz %.2lf ve %.2lf sayılarının toplamı %.2lf", firstnumber, secondnumber, firstnumber+secondnumber);
             break;
         case '-':
-            printf("Girmiş olduğunuz büyük olan %.2lf ve %.2lf sayılarının farkı %.2lf ", firstnumber, secondnumber, firstnumber-secondnumber);
+            printf("\r Girmiş olduğunuz büyük olan %.2lf ve %.2lf sayılarının farkı %.2lf ", firstnumber, secondnumber, firstnumber-secondnumber);
             break;
         case '*':
-            printf("Girmiş olduğunuz  %.2lf ve %.2lf sayılarının çarpımı %.2lf ", firstnumber, secondnumber, firstnumber*secondnumber);
+            printf("\rGirmiş olduğunuz  %.2lf ve %.2lf sayılarının çarpımı %.2lf ", firstnumber, secondnumber, firstnumber*secondnumber);
             break;
         case '/':
-            printf("Girmiş olduğunuz  %.2lf ve %.2lf sayılarının bölümü %.2lf ", firstnumber, secondnumber, firstnumber/secondnumber);
+            printf("\rGirmiş olduğunuz  %.2lf ve %.2lf sayılarının bölümü %.2lf ", firstnumber, secondnumber, firstnumber/secondnumber);
             break;
     }
 
