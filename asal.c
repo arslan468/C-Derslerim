@@ -14,9 +14,7 @@ int main (){
         {
             sayac++;
         }
-
     }
-
     if (sayac>2)
     {
         printf("Sayınız Asal değil");
