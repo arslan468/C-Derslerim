@@ -1,10 +1,12 @@
 #include<stdio.h>
 #include<unistd.h>
 
+int bakiye = 25850;
+
 int main (){
 
-    int bakiye, sifre, islem, islem_ucreti,kart=1, hatali_giris = 0, tutar,dongu;
-    bakiye = 25850;
+    int sifre, islem, islem_ucreti,kart=1, hatali_giris = 0, tutar,dongu;
+    
     
     while (kart == 1 && hatali_giris <= 3)
     {
