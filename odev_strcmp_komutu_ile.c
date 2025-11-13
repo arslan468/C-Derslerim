@@ -32,7 +32,6 @@ int main ()
            if ((sayi_x*sayi_y)>100 && (sayi_x+sayi_y<50))
            {
                printf("\nMatematiksel Doğrulama Başarılı! Şifre Kontrolüne Geçiliyor.\n");  
-               sleep(1);
 
 
                for (hatali_giris=3; hatali_giris != 0; hatali_giris--)
@@ -54,6 +53,11 @@ int main ()
 
 
                    /*
+
+                   kontrolü bu kısımda for döngüsü ile yaptım ancak strcmp komutunun kullanımını daha doğru bulduğum için 
+                   onunla yaptım her ikisi de çalışıyor kontrol ettim 
+
+
                    int flg = 0;
                    for (int i = 0; i < strlen(sabit_sifre); i++)
                    {
