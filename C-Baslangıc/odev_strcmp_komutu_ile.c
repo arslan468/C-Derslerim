@@ -3,6 +3,7 @@
 #include<string.h>
 
 
+
 int main ()
 {
    int sayi_x, sayi_y, matematiksel_dogrulama=1;
@@ -37,7 +38,7 @@ int main ()
                for (hatali_giris=3; hatali_giris != 0; hatali_giris--)
                {
                    printf("\nLütfen Şifrenizi giriniz: ");
-                   scanf(" %s", &alinan_sifre);
+                   scanf(" %s", alinan_sifre);
 
                    if (strcmp(sabit_sifre, alinan_sifre)==0)
                    {         
