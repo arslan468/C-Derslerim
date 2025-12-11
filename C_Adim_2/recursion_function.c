@@ -4,3 +4,5 @@
 #include<stdlib.h>
 
 
+//Özyinelemeli fonksiyon kendi kendisini çağıran fonksiyon 
+
