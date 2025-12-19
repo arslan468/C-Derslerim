@@ -1,19 +1,40 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int main() {
-    int sayi = 50;      // Normal bir değişken. Değeri 50.
-    int *ptr;           // Bir pointer tanımladık (henüz boş).
+int y = 0;
 
-    ptr = &sayi;        // DİKKAT: 'sayi'nin adresini 'ptr'ye atadık.
-                        // Artık ptr, sayi'nin nerede olduğunu biliyor.
 
-    printf("Sayinin degeri: %d\n", sayi);     // Çıktı: 50
-    printf("Pointer ile erisim: %d\n", *ptr); // Çıktı: 50 (*ptr -> adrese git, değeri oku)
+int normal( int x)
+{
 
-    // Şimdi pointer üzerinden değeri değiştirelim
-    *ptr = 100;         // "Adrese git, oraya 100 yaz" dedik.
-    
-    printf("Sayinin yeni degeri: %d\n", sayi); // Çıktı: 100 (Orijinal değişken değişti!)
-    
+}
+
+int pointer(int x)
+{
+
+}
+
+int main()
+{
+
+    y = 58;
+    int *ptr = &y;
+
+    printf("sayının değeri %d\n", y);
+
+    printf("pointer ile sayının değeri %d\n", *ptr);
+
+    *ptr = 119;
+
+    printf("pointer ile değişim yapıldı %d\n", y);
+
+
+
+
+
+
+
+
+
+
     return 0;
 }

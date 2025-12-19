@@ -1,0 +1,14 @@
+int main() {
+    // Taslağı kullanarak gerçek bir oyuncu oluşturalım
+    struct Oyuncu oyuncu1; 
+
+    // Verileri dolduralım (Nokta operatörü kullanılır)
+    strcpy(oyuncu1.isim, "Savasci");
+    oyuncu1.can = 100;
+    oyuncu1.hiz = 15.5;
+
+    printf("Karakter: %s\n", oyuncu1.isim);
+    printf("Saglik: %d\n", oyuncu1.can);
+
+    return 0;
+}
