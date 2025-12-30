@@ -67,9 +67,23 @@ int main ()
     yazdir(new2);
 
     kitap* arama[]= {new, new1, new2};
+    int kontrol;
 
-    printf("\nAradığınız kitabın ısbn numarasını giriniz: ");
-    scanf(" %d", &aranan_deger);
+    while (1)
+    {
+        printf("\nAradığınız kitabın ısbn numarasını giriniz: ");
+        kontrol = scanf(" %d", &aranan_deger);
+        if(kontrol == 1 )
+        {
+            break;
+        }
+        else
+        {
+            printf("\n\t!!!HATALI TUŞLAMA YAPTINIZ LÜTFEN YALNIZCA TAM SAYI GİRİNİZ!!!\n");
+            while (getchar() != '\n');
+        }
+
+    }
 
     kitap* sonuc = ara(arama,  sayi , aranan_deger);
 
