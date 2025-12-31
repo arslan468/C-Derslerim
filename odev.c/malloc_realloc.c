@@ -48,6 +48,4 @@ int main ()
     printf("\n=================    GÖRÜŞMEK ÜZERE👋   =================\n");
 
     return 0;
-
-
 }

@@ -1,0 +1,215 @@
+Tamamdır toprağım, mesaj alındı! "Büyük lokma boğazımda kalır, ben küçük küçük çiğneyeyim" diyorsun. O da olur, başım gözüm üstüne. Hatta bakarsan bu yöntem, konuları sindire sindire gitmek için daha sağlıklı olabilir.
+
+Madem öyle, o koca "HamsiDB" hayalini şimdilik rafa kaldırıyoruz. Senin o PDF'lerdeki bütün konuları (Algoritma, Değişkenler, Diziler, Stringler, Fonksiyonlar, Recursion, Struct ve Pointer/Malloc) 5 tane "atıştırmalık" projeye bölüştürdüm. Her biri bir konunun uzmanı yapacak seni.
+
+Hazırsan, işte yeni yol haritan:
+
+---
+
+### Proje 1: "Çerez Niyetine" - Sayı Tahmin ve Basit Hesap Makinesi
+
+**Amaç:** C diline ısınmak, temel mantığı (algoritma), döngüleri ve karar yapılarını oturtmak. Elin `if`, `while`, `printf` yazmaya alışacak.
+
+* **Kapsadığı Konular:**
+* Hafta 2-3 (Algoritma Mantığı, Akış)
+* Hafta 4 (Değişkenler, `printf/scanf`, Temel Operatörler, `if-else`, `while/do-while`)
+* Hafta 6'dan ufak bir esinti (`rand()` ile rastgele sayı)
+
+
+* **Ne Yapacaksın?**
+1. **Menü:** Program açılınca kullanıcıya soracak: "1- Sayı Tahmin Oyunu, 2- Hesap Makinesi, 3- Çıkış".
+2. **Sayı Tahmin:** Bilgisayar 1-100 arası sayı tutacak, sen bilemeye çalışacaksın. "Aşağı in", "Yukarı çık" diyecek. Kaç kerede bildiğini sayacak.
+3. **Hesap Makinesi:** İki sayı alıp, kullanıcı isteğine göre +, -, *, / işlemi yapıp sonucu basacak basit bir fonksiyon kullanacaksın.
+
+
+
+---
+
+### Proje 2: "Veriyle Dans" - Sezar Şifreleme ve Matris Matik
+
+**Amaç:** Dizilerle (arrays) ve metinlerle (strings) oynamayı öğrenmek. Veriyi peş peşe dizip işlemeyi kavramak.
+
+* **Kapsadığı Konular:**
+* Hafta 6 (Tek Boyutlu Diziler, Çok Boyutlu Diziler/Matrisler, Stringler)
+
+
+* **Ne Yapacaksın?**
+1. **Sezar Şifresi:** Kullanıcıdan bir kelime (string) al. Bir de "kaydırma miktarı" (mesela 3) al. Her harfi alfabede 3 sıra kaydırarak şifreli metni ekrana bas. (Örn: 'A' -> 'D', 'B' -> 'E'). Stringi karakter dizisi olarak ele alıp döngüyle gezeceksin.
+2. **Matris Toplama:** İki tane 3x3'lük matris (iki boyutlu dizi) tanımla, içlerini rastgele sayılarla doldur. Sonra bu iki matrisi toplayıp üçüncü bir matrise yazan ve ekrana basan bir kod yaz.
+
+
+
+---
+
+### Proje 3: "Beyin Yakan Kısım" - Recursive (Özyinelemeli) Matematikçiler
+
+**Amaç:** Fonksiyonları derinlemesine öğrenmek ve şu meşhur "kendi kendini çağıran fonksiyon" (recursion) mantığını çözmek.
+
+* **Kapsadığı Konular:**
+* Hafta 7 (Fonksiyonlar, Parametreler, Return değerleri)
+* Hafta 8 (Recursion - Özyineleme)
+
+
+* **Ne Yapacaksın?**
+1. **Faktöriyel Yarışı:** Kullanıcıdan bir sayı al. Bu sayının faktöriyelini hesaplayan İKİ farklı fonksiyon yaz.
+* Birinci fonksiyon normal `for` döngüsü kullansın (**Iterative**).
+* İkinci fonksiyon kendi kendini çağırsın (**Recursive**).
+
+
+2. **Fibonacci Dizisi:** Yine recursive mantıkla, kullanıcının istediği sıradaki Fibonacci sayısını bulan fonksiyonu yaz. (Hoca bunu kesin sormuştur, iyi çalış).
+
+
+
+---
+
+### Proje 4: "Paket Servis" - Mini Telefon Rehberi (Statik)
+
+**Amaç:** Farklı türdeki verileri (isim, numara vs.) bir araya getirip paketlemeyi (`struct`) öğrenmek. Henüz `malloc` yok, sabit boyutlu dizilerle çalışacağız.
+
+* **Kapsadığı Konular:**
+* Hafta Struct (Struct yapısı tanımlama, `typedef`)
+* Struct Dizileri (Array of Structs)
+
+
+* **Ne Yapacaksın?**
+1. **Yapıyı Kur:** Adı, Soyadı ve Telefon Numarası tutan bir `Kisi` struct'ı tanımla.
+2. **Rehberi Oluştur:** `Kisi rehber[10];` şeklinde 10 kişilik sabit bir rehber dizisi oluştur.
+3. **İşlemler:** Bir döngü içinde kullanıcıdan 3-5 kişinin bilgilerini alıp bu diziye doldur. Sonra başka bir döngüyle rehberi ekrana güzelce yazdır.
+
+
+
+---
+
+### Proje 5: "Assolist Sahneye Çıkar" - Dinamik Not Defteri (Pointer & Malloc)
+
+**Amaç:** C'nin en baba konusu. Belleği elle yönetmek, pointerlarla adreslerde gezinmek. Heap ile Stack farkını anlamak.
+
+* **Kapsadığı Konular:**
+* Hafta Struct'ın devamı (Pointerlar, Pointer Aritmetiği)
+* Dinamik Bellek Yönetimi (`malloc`, `free`)
+
+
+* **Ne Yapacaksın?**
+1. **Sor Bakalım:** Program başında kullanıcıya "Kaç adet not gireceksin?" diye sor.
+2. **Yer Aç:** Girdiği sayı kadar tamsayı (int) tutacak yeri `malloc` ile Heap bölgesinden ayır. Adresini bir pointer'a (`int *notlar`) ata.
+3. **Doldur:** Bir döngü ve pointer aritmetiği (veya dizi indeksi `notlar[i]`) kullanarak notları kullanıcıdan al, o ayrılan yere yaz.
+4. **Ortalama Al:** Girilen notların ortalamasını hesapla.
+5. **Temizlik İmandan Gelir:** Program bitmeden önce `free(notlar)` diyerek aldığın belleği iade etmeyi unutma!
+
+
+
+---
+
+**Plan bu toprağım.** 1'den başlayıp 5'e doğru gidersen, merdiven çıkar gibi yorulmadan zirveye varırsın.
+
+Hadi bakalım, "Bismillah" deyip **Proje 1: Sayı Tahmin ve Hesap Makinesi** ile başlayalım mı? Yoksa senin gözüne kestirdiğin başka bir başlangıç noktası var mı?
+
+
+
+
+Tamamdır toprağım, sen "çorbayı karıştırma, tatlıyı ayrı getir" diyorsun. Başım gözüm üstüne. Madem o kıyıda köşede kalan konuları (Makrolar, Static, Inline, Calloc/Realloc, Güvenli Stringler) diğerlerine yamamak istemedin, al sana bunları toplayan **özel harekat** projesi.
+
+Bu proje biraz daha "teknik" kokacak ama tam senlik.
+
+---
+
+### **Proje 6: "Gizli Ajanın Kara Kutusu" (Secure Message Encoder)**
+
+**Amaç:** Bu proje, belleği sıfırdan tertemiz açan, mesaj uzadıkça yerini genişleten, şifreleme yapan ve kaç işlem yapıldığını hafızasında tutan bir "Mesaj Şifreleme Aracı" olacak.
+
+**Kapsadığı "Açıkta Kalan" Konular:**
+
+* 
+**Ön İşlemci Komutları:** `#define`, `#ifdef` 
+
+
+* 
+**Static Değişken:** İşlem sayısını hafızada tutmak için.
+
+
+* 
+**Inline Fonksiyon:** Hızlı şifreleme işlemi için.
+
+
+* 
+**Calloc:** Tertemiz bellek açmak için.
+
+
+* 
+**Realloc:** Belleği genişletmek için.
+
+
+* 
+**fgets & String:** Güvenli metin girişi.
+
+
+
+---
+
+### **Senaryo ve Adımlar:**
+
+Bu program bir ajanın girdiği gizli mesajı alacak, belleği dinamik yöneterek kaydedecek ve basit bir yöntemle şifreleyip ekrana basacak.
+
+#### **Adım 1: Ön Hazırlık (Makrolar)**
+
+Programın başında sabitleri `#define` ile tanımla.
+
+* Maksimum başlangıç boyutu (`BASLANGIC_BOYUTU 10`) olsun.
+* Bir de `#define GUVENLI_MOD` diye bir şey tanımla. Kodun içinde `#ifdef GUVENLI_MOD` kullanarak "Şifreleme Aktif" yazısı bastır.
+
+
+
+#### **Adım 2: Tertemiz Başlangıç (Calloc)**
+
+Kullanıcıdan mesajı alacağın `char *mesaj` dizisini `malloc` ile değil, **`calloc`** ile oluştur.
+
+* **Neden?** `calloc` belleği sıfırlar (garanti 0 yapar), çöp değer kalmaz. Ajan işi temiz olur.
+
+
+
+#### **Adım 3: Güvenli Giriş (fgets)**
+
+Kullanıcıya "Mesajını yaz" de. Girişi `scanf` ile değil **`fgets`** ile al.
+
+* **Neden?** `scanf` boşluk görünce durur, `gets` ise belleği taşırır patlatır. `fgets` sınır koyduğu için güvenlidir.
+
+
+
+#### **Adım 4: Yer Yetmedi mi? (Realloc)**
+
+Diyelim ki ajan destan yazdı, ayırdığın 10 karakterlik yer doldu.
+
+* Hemen **`realloc`** devreye girecek. Mevcut diziyi koruyarak bellekteki alanı büyüteceksin.
+
+
+* *Senaryo:* Kullanıcı bir döngüde mesaj girmeye devam ederse, her seferinde `realloc` ile alanı genişlet.
+
+#### **Adım 5: Hızlı Şifreleme (Inline Fonksiyon)**
+
+Mesajın her harfini 1 ileri kaydıran (A -> B yapan) çok basit bir fonksiyon yaz.
+
+* Bu fonksiyonun başına **`inline`** yaz.
+* **Neden?** Bu işlem çok kısa ve sık yapılacak. `inline` diyerek derleyiciye "Bunu git çağırma, kodun içine göm, hızlı çalışsın" demiş olursun.
+
+
+
+#### **Adım 6: Sayaç İşliyor (Static Değişken)**
+
+Şifreleme fonksiyonunun içinde `static int sayac = 0;` tanımla. Her harf şifrelendiğinde bu sayacı arttır.
+
+* 
+**Neden?** `static` değişken fonksiyon bitse bile değerini kaybetmez. Programın sonunda "Toplam X karakter şifrelendi" diye bu sayacı yazdırabileceksin.
+
+
+
+---
+
+### **Görselleştirme: Programın Akışı**
+
+Gardaşım, bu projenin hafızada ve işlemcide nasıl dans edeceğini senin için çizdim. Bak `calloc` ile temizleyip, `realloc` ile büyütüyoruz:
+
+### **Nasıl, Kafa Yattı mı?**
+
+Bu proje, o PDF'lerdeki "teorik kalan" kısımları pratiğe dökmek için birebir. Hem `malloc` ile `calloc` farkını elinle göreceksin, hem de `realloc` ile "yerim dar" derdinden kurtulacaksın.
+
+Bunu da listeye ekleyip 6. proje olarak yapalım mı, yoksa bunu 1. proje ile birleştirip aradan çıkaralım mı? (Bence ayrı kalsın, havası başka).
