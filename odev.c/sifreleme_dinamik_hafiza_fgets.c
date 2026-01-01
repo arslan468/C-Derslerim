@@ -8,7 +8,6 @@
 void sezar(int x, char *sifresiz);
 void ters_yazim(char *duz);
 
-
 int main()
 {
     selamlama();
@@ -31,6 +30,8 @@ int main()
     printf("Girmiş olsuğunuz metin: %s",metin);
     sezar(kaydirma, metin);
     ters_yazim(metin);
+
+    
 
 
     
