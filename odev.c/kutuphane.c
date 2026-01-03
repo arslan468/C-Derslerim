@@ -130,4 +130,3 @@ void yazdir(kitap* a)
     
 
 }
-
