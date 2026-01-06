@@ -16,7 +16,7 @@ typedef struct
 abonelik *abonelik_listesi = NULL;
 static int arac_sayisi = 0;
 
-void ekle()
+void ekle_ici()
 {
     char gecici_isim[1000];
     int gecici_sure, gecici_tutar;
@@ -31,8 +31,8 @@ void ekle()
     if (temp == NULL)
     {
         printf("!!! HATA RAM DE YER AYRILAMADI !!!");
+        return;
     }
-
 
     abonelik_listesi = temp;
     abonelik_listesi[arac_sayisi].ad_soyad = (char *)calloc(strlen(gecici_isim), sizeof(char));
@@ -40,6 +40,43 @@ void ekle()
     abonelik_listesi[arac_sayisi].sure = gecici_sure;
     abonelik_listesi[arac_sayisi].toplam_ucret = gecici_tutar;
     arac_sayisi++;
+
+}
+
+void ekle()
+{
+    int devam_durumu = 1;
+    while (devam_durumu)
+    {
+        int kontrol,karar;
+        while (1)
+        {
+            printf("\nAraç eklemek için = 1\nÇıkış Yapmak için = 2'ye basınız: ");
+            kontrol = scanf(" %d", &karar);
+            getchar();
+            if ((kontrol == 1 && karar == 1) || (kontrol == 1 && karar == 2))
+            {
+                break;
+            }
+            else
+            {
+                printf("\nHATALI TUŞLAMA YAPTINIZ YALNIZCA BELİRTİLEN DEĞERLERİ GİRİNİZ!!!\n");
+                while (getchar() != '\n');
+            }   
+        }
+
+        switch (karar)
+        {
+        case 1:
+            ekle_ici();
+            break;
+        case 2:
+            devam_durumu = 0;
+            break;
+        default:
+            break;
+        }
+    }
 }
 
 void listele()
@@ -68,7 +105,6 @@ void temizle()
 int main()
 {
     selamlama();
-    ekle();
     ekle();
     listele();
     temizle();
