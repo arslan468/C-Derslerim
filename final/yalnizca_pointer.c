@@ -25,7 +25,6 @@ int main()
 
     printf("%s", isim.ad);
 
-
     
     int deger = 32123;
     int *ptr = &deger;

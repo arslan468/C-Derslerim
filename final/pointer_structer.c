@@ -8,9 +8,9 @@
 
 typedef struct 
 {
-    char *ad;
-    char *sehir;
-    int plaka;
+    char *ad; 
+    char *sehir; 
+    int plaka; 
 }kisi_listesi;
 
 
@@ -45,9 +45,10 @@ int main()
     for (int i = 0; i < kisi_sayisi; i++)
     {
         ad_uzunluk = strlen(id[i].ad);
+        printf("\n\nBURDAAA = %d",(sizeof(id)/sizeof(id[0])));
 
         id[i].ad = (char *)realloc(id[i].ad, ad_uzunluk * sizeof(char));
-
+        
         sehir_uzunluk = strlen(id[i].sehir);
         
         id[i].sehir = (char *)realloc(id[i].sehir, sehir_uzunluk * sizeof(char));
@@ -58,7 +59,6 @@ int main()
     {
         printf("\n\nAd: %s\n\nŞehir: %s\n\nPlaka: %d\n\n",id[i].ad, id[i].sehir, id[i].plaka);
     }
-
     
 
     

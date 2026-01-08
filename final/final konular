@@ -1,46 +1,46 @@
 # PROGRAMLAMA
 
-- MALLOC 
+- MALLOC ✅
 heapte istenilen büyüklükte yer parseller içini temizlemeden
 ptr = (data_type * ) malloc(eleman_sayisi * sizeof(data_type) )
-- CALLOC
+- CALLOC ✅
 heapte istenilen büyüklükte yer ayırır ve bitleri sıfırlar
 ptr = (data_type *) calloc(eleman_sayisi, sizeof(data_type))
-- DİNAMİK DİZİ
+- DİNAMİK DİZİ ✅
 veri büyüklüğüne göre dizinin büyüklüğünü ayarlar 
-- REALLOC İLE BÜYÜLT KÜÇÜLT
+- REALLOC İLE BÜYÜLT KÜÇÜLT ✅
 heapte ayrılmış olann yeri genişletir veya daraltır
-- STRUCT
+- STRUCT ✅
 içinde birden fazla veri türünü barındırabilen veri bloğu
-- POİNTER İLE STRUCT ERİŞİM
+- POİNTER İLE STRUCT ERİŞİM ✅
 structtı doğrudan çağırıp kullanmak yerine adresi üzerinden işlem yapılır
-- TYPEDEF
+- TYPEDEF ✅
 tanımlara kısaltma yapmak için kullanılır 
-- RECURSİVE FUNCTİON
+- RECURSİVE FUNCTİON ✅
 ihtiyaca göre kendi kendini çağıran fonksiyon
-- İNLİNE FUNCTİON
+- İNLİNE FUNCTİON ✅
 fonksiyon çağrıldığı zaman parametreleri gönderip cevap beklemek yerine doğrudan fonksiyonu bulunduğu yere yapıştırır
-- GETS
+- GETS ✅
 klavyeden veri almak için sizeof farkı boşluğu bitiş değeri olarak görmez
-- PUTS
+- PUTS ✅
 dizileri ekrana yazdırma komutu boş değer geldiğinde satır atlar
-- GETC
+- GETC ✅
 dosyadan karakterleri tek tek okuyup int türünde yazar
-- PUTC
+- PUTC ✅
 harfleri tek tek dosyaya gönderen komut ascıı şeklinde veri gönderir
-- MATRİS
+- MATRİS ✅
 iki boyutlu satır x sütun şeklinde olan diziler
-- DİZİLER
+- DİZİLER ✅
 aynı veri türünde olan birden fazla veriyi tek değişken çatısı altında barındır
-- DİZİLERDE DÖNGÜLER
-- RAND
+- DİZİLERDE DÖNGÜLER ✅
+- RAND ✅
 tam olarak rasgele olmasa da rasgeleliği taklit eder
-- SRAND
+- SRAND ✅
 belirlediğimiz değer üzerinden daha rastgeleliğe yakın bir şekilde değer üretir
-- STRCMP
+- STRCMP ✅
 char dizisini karşılaştırmaya yarar
-- STRCASECMP
+- STRCASECMP ✅
 strcmp ile aynı işi yapar ama büyük küçük harf duyarsız çalışır 
-- DO/WHİLE
-- GOTO
-- CONTİNUE
+- DO/WHİLE ✅
+- GOTO. ✅
+- CONTİNUE ✅

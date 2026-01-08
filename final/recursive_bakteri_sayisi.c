@@ -6,7 +6,7 @@
 
 int bakteri_hesapla(int sayi, int zaman)
 {
-    if (zaman == 0)
+    if (zaman == 1)
     {
         return sayi;
     }

@@ -4,9 +4,6 @@
 #include "selam.h"
 #include <time.h>
 
-
-
-
 int recursive_faktoriyel(int x);
 
 int main()
