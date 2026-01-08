@@ -1,6 +1,6 @@
 # PROGRAMLAMA
 
-- MALLOC
+- MALLOC 
 heapte istenilen büyüklükte yer parseller içini temizlemeden
 ptr = (data_type * ) malloc(eleman_sayisi * sizeof(data_type) )
 - CALLOC

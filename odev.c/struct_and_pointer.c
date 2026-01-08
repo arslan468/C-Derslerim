@@ -34,6 +34,7 @@ void ekle_ici()
         return;
     }
 
+    
     abonelik_listesi = temp;
     abonelik_listesi[arac_sayisi].ad_soyad = (char *)calloc(strlen(gecici_isim), sizeof(char));
     strcpy(abonelik_listesi[arac_sayisi].ad_soyad, gecici_isim);
