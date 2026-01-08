@@ -31,10 +31,6 @@ int main()
     sezar(kaydirma, metin);
     ters_yazim(metin);
 
-    
-
-
-    
 
     veda();
     return 0;

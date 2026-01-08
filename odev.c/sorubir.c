@@ -6,10 +6,6 @@ int main (void)
     double b,sonuc;
     char c;
 
-
-
-
-
     printf("Bir sayı giriniz: ");
     scanf("%d", &a);
     printf("Bir ondalıklı sayı giriniz: ");
