@@ -1,4 +1,4 @@
-# 🚀 C_Lessons: C Programlama Serüvenim
+# 🚀 C Lessons: C Programlama Serüvenim
 
 Bu depo, üniversite öğrenimim boyunca **C Programlama** derslerinde aldığım notları, çözdüğüm laboratuvar örneklerini ve kendimi geliştirmek adına internetten bulup uyguladığım projeleri içermektedir.
 
@@ -41,4 +41,3 @@ Eğer kodlarda bir hata görürseniz veya "Hocam burası `O(n^2)` değil de `O(n
 ## 📝 Lisans
 
 Bu proje tamamen eğitim amaçlıdır ve açık kaynaklıdır.
-![Uploading image.png…]()
