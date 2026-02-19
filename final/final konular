@@ -27,7 +27,7 @@ dizileri ekrana yazdırma komutu boş değer geldiğinde satır atlar
 - GETC ✅
 dosyadan karakterleri tek tek okuyup int türünde yazar
 - PUTC ✅
-harfleri tek tek dosyaya gönderen komut ascıı şeklinde veri gönderir
+harfleri tek tek dosyaya gönderen komut ascıı şeklinde veri xgönderir
 - MATRİS ✅
 iki boyutlu satır x sütun şeklinde olan diziler
 - DİZİLER ✅
